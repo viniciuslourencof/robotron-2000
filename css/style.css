@@ -209,6 +209,45 @@ main {
     margin: 10px 0 0;
 }
 
+.imagens {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.botao {
+    cursor: pointer;
+    border-radius: 4px;
+    height: 1rem;
+    width: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.amarelo {    
+    background-color: yellow;    
+}
+
+.azul {    
+    background-color: blue;    
+}
+
+.branco {    
+    background-color: white;    
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.preto {
+    background-color: black;
+}
+
 @media screen and (max-width: 1600px) {
     body { 
         font-size: 14px;
@@ -219,6 +258,7 @@ main {
         margin: 5vh auto;
     }
 }
+
 
 @media screen and (max-width: 1200px) {
     body { 

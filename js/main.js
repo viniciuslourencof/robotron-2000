@@ -1,5 +1,7 @@
+const robotron = document.querySelector("#robotron");
 const controle = document.querySelectorAll("[data-controle]");
 const estatisticas = document.querySelectorAll("[data-estatistica]");
+const imagens = document.querySelectorAll(".botao")
 
 const pecas = {
     "bracos": {
@@ -59,3 +61,11 @@ function atualizaEstatisticas(peca) {
     })
 
 }
+
+imagens.forEach(imagem => {   
+
+    imagem.addEventListener("click", () => {
+        robotron.src = `img/robotron-${imagem.dataset.robotron}.png`
+    })
+})
+    
