@@ -1,11 +1,12 @@
-const robotron = document.querySelector('#robotron');
+const substrair = document.querySelector('#subtrair');
+const somar = document.querySelector('#somar');
+const braco = document.querySelector('#braco');
 
-robotron.addEventListener("click", () => {
-    console.log('cliquei')
+somar.addEventListener("click", (evento) => {
+    braco.value =  parseInt(braco.value) + 1;
 });
 
-function dizOi (nome) {
-    console.log(nome)
-}
+substrair.addEventListener("click", (evento) => {
+    braco.value =  parseInt(braco.value) - 1;
+});
 
-dizOi('sas');
