@@ -1,5 +1,13 @@
-const botao = document.querySelector('#calcular');
+const lista = document.querySelector('.lista');
 
-botao.addEventListener('click', () => {
-    document.querySelector('.resultado').innerText = 'Fui clicado';
+const listaBotoes = document.querySelectorAll('button');
+
+listaBotoes.forEach(botao => {
+    botao.addEventListener('click', () => {
+        if (botao.getAttribute('tipo') == 'sumir') {
+            lista.classList.add('invisivel');
+        } else {
+            lista.classList.remove('invisivel');
+        }
+    })
 })
